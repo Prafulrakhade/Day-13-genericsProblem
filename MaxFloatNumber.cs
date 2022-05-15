@@ -3,13 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Collections;
 
 namespace TestMaximumNumber
 {
-    public class MaxIntegerNumber
+    internal class MaxFloatNumber
     {
-        public static int MaximumIntegerNumber(int firstValue, int secondValue, int thirdValue)
+        public static double MaximumFloatNumber(double firstValue, double secondValue, double thirdValue)
         {
             if (firstValue.CompareTo(secondValue) > 0 && firstValue.CompareTo(thirdValue) > 0 ||
                 firstValue.CompareTo(secondValue) >= 0 && firstValue.CompareTo(thirdValue) > 0 ||
@@ -32,7 +31,7 @@ namespace TestMaximumNumber
                 Console.WriteLine(thirdValue + " Is Maximum");
                 return thirdValue;
             }
-            if (firstValue.CompareTo(secondValue) == 0 && firstValue.CompareTo(thirdValue) == 0 && secondValue.CompareTo(thirdValue) == 0)
+            if(firstValue.CompareTo(secondValue)==0 && firstValue.CompareTo(thirdValue)==0 && secondValue.CompareTo(thirdValue)==0)
             {
                 Console.WriteLine("All The Three Number Are Same");
             }
