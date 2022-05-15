@@ -32,15 +32,30 @@ namespace TestMaximumNumber
             //double resut = MaxFloatNumber.MaximumFloatNumber(num1, num2, num3);
             //Console.WriteLine(resut);
 
-            Console.WriteLine("Maximum Number From Three Float Number\n");
-            //Console.Write("Enter Num1 : ");
-            //string num1 = (Console.ReadLine());
-            //Console.Write("Enter Num2 : ");
-            //string num2 = (Console.ReadLine());
-            //Console.Write("Enter Num3 : ");
-            //string num3 = (Console.ReadLine());
-            string resut = MaxString.MaximumStringNumber("Praful","Mayur","Karan");
-            Console.WriteLine(resut);
+            // it is for string
+
+            //Console.WriteLine("Maximum Number From Three String \n");
+            ////Console.Write("Enter Num1 : ");
+            ////string num1 = (Console.ReadLine());
+            ////Console.Write("Enter Num2 : ");
+            ////string num2 = (Console.ReadLine());
+            ////Console.Write("Enter Num3 : ");
+            ////string num3 = (Console.ReadLine());
+            //string resut = MaxString.MaximumStringNumber("Praful","Mayur","Karan"); // we can write number also  in the string by user
+            //Console.WriteLine(resut);
+
+            Console.WriteLine("Maximum Number From Three Integer Number Using Generic Class And Method with IComparable\n");
+            RefactorGenericMax<int> refactorInt = new RefactorGenericMax<int>(12, 23, 45);
+            refactorInt.MaxMethod();
+
+
+            Console.WriteLine("Maximum Number From Three Float Number Using Generic Class And Method with IComparable\n");
+            RefactorGenericMax<double> refactorDouble = new RefactorGenericMax<double>(12.52, 23.56, 4.45);
+            refactorDouble.MaxMethod();
+
+            Console.WriteLine("Maximum Number From Three Float Number Using Generic Class And Method with IComparable\n");
+            RefactorGenericMax<string> refactorString = new RefactorGenericMax<string>("A","B","C");  //we can write number also in string
+            refactorString.MaxMethod();
         }
     }
 }
