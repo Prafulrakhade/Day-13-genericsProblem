@@ -35,27 +35,39 @@ namespace TestMaximumNumber
             // it is for string
 
             //Console.WriteLine("Maximum Number From Three String \n");
-            ////Console.Write("Enter Num1 : ");
-            ////string num1 = (Console.ReadLine());
-            ////Console.Write("Enter Num2 : ");
-            ////string num2 = (Console.ReadLine());
-            ////Console.Write("Enter Num3 : ");
-            ////string num3 = (Console.ReadLine());
+            //Console.Write("Enter Num1 : ");
+            //string num1 = (Console.ReadLine());
+            //Console.Write("Enter Num2 : ");
+            //string num2 = (Console.ReadLine());
+            //Console.Write("Enter Num3 : ");
+            //string num3 = (Console.ReadLine());
             //string resut = MaxString.MaximumStringNumber("Praful","Mayur","Karan"); // we can write number also  in the string by user
             //Console.WriteLine(resut);
 
-            Console.WriteLine("Maximum Number From Three Integer Number Using Generic Class And Method with IComparable\n");
-            RefactorGenericMax<int> refactorInt = new RefactorGenericMax<int>(12, 23, 45);
-            refactorInt.MaxMethod();
+            //it is for refactor 1
+
+            Console.WriteLine("Maximum Number From Three Integer Number\n");
+            Refactor1<int> max1 = new Refactor1<int>();
+            max1.MaxValue(13, 46, 87);
+            Console.WriteLine("Maximum Number From Three Float Number\n");
+            Refactor1<double> max2 = new Refactor1<double>();
+            max2.MaxValue(13.98, 46.78, 87.67);
+            Console.WriteLine("Maximum Number From Three String \n");
+            Refactor1<string> max3 = new Refactor1<string>();
+            max3.MaxValue("12","4","56");
 
 
-            Console.WriteLine("Maximum Number From Three Float Number Using Generic Class And Method with IComparable\n");
-            RefactorGenericMax<double> refactorDouble = new RefactorGenericMax<double>(12.52, 23.56, 4.45);
-            refactorDouble.MaxMethod();
+            // its for refactor 2
 
-            Console.WriteLine("Maximum Number From Three Float Number Using Generic Class And Method with IComparable\n");
-            RefactorGenericMax<string> refactorString = new RefactorGenericMax<string>("A","B","C");  //we can write number also in string
-            refactorString.MaxMethod();
+            //Console.WriteLine("Maximum Number From Three Integer Number Using Generic Class And Method with IComparable\n");
+            //RefactorGenericMax<int> refactorInt = new RefactorGenericMax<int>(12, 23, 45);
+            //refactorInt.MaxMethod();
+            //Console.WriteLine("Maximum Number From Three Float Number Using Generic Class And Method with IComparable\n");
+            //RefactorGenericMax<double> refactorDouble = new RefactorGenericMax<double>(12.52, 23.56, 4.45);
+            //refactorDouble.MaxMethod();
+            //Console.WriteLine("Maximum Number From Three Float Number Using Generic Class And Method with IComparable\n");
+            //RefactorGenericMax<string> refactorString = new RefactorGenericMax<string>("A","B","C");  //we can write number also in string
+            //refactorString.MaxMethod();
         }
     }
 }
